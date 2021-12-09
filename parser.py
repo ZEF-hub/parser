@@ -48,7 +48,7 @@ for i in open('authors.txt').readlines():
         for element in html_.select('.entry-content > p'):
             txt += (element.text)
         text_verse.append(txt)
-        print(f'№{count} {bio} {title_verses[y]} {y}')
+        print(f'№{count} [{y+1}/{len(title_verses)}] {bio} {title_verses[y]}')
         y += 1
 
 
